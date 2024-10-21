@@ -1,0 +1,19 @@
+services:
+  ollama:
+    image: ollama/ollama  # Nome dell'immagine per il container Ollama
+    ports:
+      - "11434:11434"  # Espone la porta 11434
+    volumes:
+      - ollama:/root/.ollama  # Monta il volume
+
+  streamlit:
+    ports:
+      - "8501:8501"
+    build:
+      context: .  # Percorso della tua applicazione
+      dockerfile: Dockerfile  # Nome del Dockerfile se necessario
+    depends_on:
+      - ollama  # Assicura che il container Ollama venga avviato prima
+
+volumes:
+  ollama:  # Definizione del volume
