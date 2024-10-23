@@ -14,9 +14,17 @@ Download an LLM, for example Llama3, by using:
 docker exec -it ollama ollama run llama3
 ```
 
-Clone the repository and start the Docker containers using the following commands:
+Clone the repository:
 
 ```bash
 git clone https://github.com/zambo990/chatbot.git
+```
+
+Enter the directory of the project:
+```bash
+cd chatbot
+```
+Start the Docker containers
+```bash
 docker compose up
 ```
