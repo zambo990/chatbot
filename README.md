@@ -17,6 +17,6 @@ docker exec -it ollama ollama run llama3
 Clone the repository and start the Docker containers using the following commands:
 
 ```bash
-git clone https://github.com/Rizzo08-coder/LLM4Logs](https://github.com/zambo990/chatbot.git
+git clone https://github.com/zambo990/chatbot.git
 docker compose up
 ```
